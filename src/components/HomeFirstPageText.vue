@@ -19,6 +19,7 @@ export default {
 h3 {
   font-family: Cera Pro,serif;
   font-style: normal;
+  font-weight: 900;
   font-size: 40px;
   line-height: 120%;
 }
@@ -31,6 +32,7 @@ span {
   line-height: 20px;
   margin: 20px 0;
   width: 75%;
+  color: #141414;
 }
 #donate-btn {
   background-color: #F18500;

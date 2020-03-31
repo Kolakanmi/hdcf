@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full shadow-2xl">
-    <div class="flex">
-      <div class="">
-        <img alt="children-sitting" src="../../images/children-sitting.png" style="height: 100%; width: 100%; object-fit: fill"/>
+  <div class="shadow-2xl" style="height: 420px; margin-right: 40px">
+    <div class="flex h-full">
+      <div class="w-5/12 h-full">
+        <img class="object-cover w-full h-full" alt="children-sitting" src="../../images/children-sitting.png"/>
       </div>
-      <div class="flex w-11/12">
-        <div class="w-11/12 mx-12 my-8">
+      <div class="flex w-7/12">
+        <div class="w-9/12 m-auto">
           <h3>Ikoyi Orphanage</h3>
           <span>Campaign description goes here</span>
           <br/>
@@ -59,7 +59,7 @@ export default {
     margin-bottom: 10px;
   }
   span {
-    font-family: Cera Pro, serif;
+    font-family: "Cera Pro",sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

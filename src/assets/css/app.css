@@ -10,3 +10,8 @@ html, body {
     padding: 0px;
     background-color: white;
 }
+
+@font-face {
+    font-family: Cera Pro;
+    src: url("../../../fonts/cera-pro-sv/CeraProMedium.otf");
+}

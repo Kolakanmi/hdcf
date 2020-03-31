@@ -1,10 +1,10 @@
 <template>
-  <div class="md:flex">
-    <div class="md:w-4/12" style="">
-      <img alt="children" src="../../images/home-section3.png" style="height: 100%; width: 100%; object-fit: fill"/>
+  <div class="md:flex" style="height: 450px">
+    <div class="md:w-5/12 h-full" style="">
+      <img class="object-cover w-full h-full" alt="children" src="../../images/home-section3.png" />
     </div>
-    <div id="who-we-are" class="flex items-center justify-center md:w-8/12">
-      <div class="w-3/4">
+    <div id="who-we-are" class="flex items-center md:w-7/12">
+      <div class="w-1/2 ml-32">
         <h3>Who Are We</h3>
         <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.

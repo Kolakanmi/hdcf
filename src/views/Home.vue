@@ -24,6 +24,23 @@
     <div id="fourth-page">
       <HomeUpcomingEvents/>
     </div>
+    <div id="email-footer" class="flex justify-center items-center m-auto h-full">
+      <HomeEmailSubscribe/>
+    </div>
+    <div id="contact-us">
+      <div class="w-1/3 text-center mx-auto">
+        <h3>Contact Us</h3>
+        <span>drop a message to get more info about our activities, we will love to hear from you.</span>
+      </div>
+      <div class="w-2/3">
+        <form>
+          <div class="w-1/2">
+            <label>Name</label>
+            <input>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -36,9 +53,11 @@ import HomeFirstPageText from '@/components/HomeFirstPageText'
 import HomeMissionWrapper from '@/components/HomeMissionWrapper'
 import HomeWhoWeAre from '@/components/HomeWhoWeAre'
 import HomeUpcomingEvents from '@/components/HomeUpcomingEvents'
+import HomeEmailSubscribe from '@/components/HomeEmailSubscribe'
 export default {
   name: 'Home',
   components: {
+    HomeEmailSubscribe,
     HomeUpcomingEvents,
     HomeWhoWeAre,
     HomeMissionWrapper,
@@ -67,6 +86,17 @@ export default {
   }
   #fourth-page {
     padding-top: 150px;
-    padding-left: 13.68%;
+    //padding-left: 13.68%;
+    //margin-bottom: 150px;
+  }
+  #email-footer {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background: url("../../images/background-footer-email.png");
+    height: 300px;
+    background-size: 100% 300px;
+  }
+  #contact-us {
+    background-color: #FFF7ED;
   }
 </style>

@@ -4,7 +4,7 @@
       <h3 class=""><strong>Upcoming Campaigns</strong></h3>
       <span>We aim to bridge the gap and lorem towards the sustainable development goals.</span>
     </div>
-    <div class="flex">
+    <div class="flex" style="padding-left: 13.68%;">
       <div class="my-auto ml-2 mr-20">
         <p class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
           <img class="m-auto" alt="left-arrow"  src="../../images/left-arrow.svg">
@@ -13,7 +13,8 @@
           <img class="m-auto" alt="right-arrow" src="../../images/right-arrow.svg">
         </p>
       </div>
-      <div class="flex w-8/12">
+      <div class="flex">
+        <HomeCountdownCard/>
         <HomeCountdownCard/>
       </div>
     </div>
