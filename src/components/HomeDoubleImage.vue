@@ -1,11 +1,11 @@
 <template>
-  <div class="p-2" style="height: 100%; width: 100%; position: relative">
-    <div class="" style="height: 90%; width: 90%; position: relative; margin-top: 8%">
+  <div class="p-2 border border-red-500" style="height: 100%; width: 100%; position: relative">
+    <div class="border border-blue-500" style="height: 90%; width: 90%; position: relative; margin-top: 8%">
       <div class="children-back">
-        <img alt="children-back" src="../../images/children-back.png" style="height: 100%; width: 100%; object-fit: fill"/>
+        <img alt="children-back" src="../../images/children-back.png" style="height: 100%; width: 100%; object-fit: cover"/>
       </div>
       <div class="children-front">
-        <img alt="children-front" src="../../images/children-front.png" style="height: 100%; width: 100%; object-fit: fill"/>
+        <img alt="children-front" src="../../images/children-front.png" style="height: 100%; width: 100%; object-fit: cover"/>
       </div>
     </div>
   </div>

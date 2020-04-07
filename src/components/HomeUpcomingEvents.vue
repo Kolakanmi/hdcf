@@ -13,7 +13,7 @@
           <img class="m-auto" alt="right-arrow" src="../../images/right-arrow.svg">
         </p>
       </div>
-      <div class="flex">
+      <div class="flex w-full flex-no-wrap overflow-x-hidden">
         <HomeCountdownCard/>
         <HomeCountdownCard/>
       </div>

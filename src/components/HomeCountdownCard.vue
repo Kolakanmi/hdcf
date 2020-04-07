@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-2xl" style="height: 420px; margin-right: 40px">
+  <div class="shadow-xl flex-none" style="height: 420px; margin-right: 40px">
     <div class="flex h-full">
       <div class="w-5/12 h-full">
         <img class="object-cover w-full h-full" alt="children-sitting" src="../../images/children-sitting.png"/>
