@@ -1,8 +1,8 @@
 <template>
   <div class="shadow-xl flex-none" style="height: 420px; margin-right: 40px">
-    <div class="flex h-full">
+    <div class="flex h-full mr-8" style="min-width: 800px !important;">
       <div class="w-5/12 h-full">
-        <img class="object-cover w-full h-full" alt="children-sitting" src="../../images/children-sitting.png"/>
+        <img class="object-cover w-full h-full" alt="children-sitting" :src="require('@/assets/img/' + eventImage)"/>
       </div>
       <div class="flex w-7/12">
         <div class="w-9/12 m-auto">
@@ -44,7 +44,8 @@
 
 <script>
 export default {
-  name: 'HomeCountdownCard'
+  name: 'HomeCountdownCard',
+  props: ['eventImage']
 }
 </script>
 

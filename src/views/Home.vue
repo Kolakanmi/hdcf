@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div id="first-page" class="">
-      <div style="height: 15vh">
+      <div style="height: 10vh; margin-bottom: 5vh">
         <NavHeader/>
       </div>
       <div class="flex" style="height: 80vh;">
@@ -24,21 +24,40 @@
     <div id="fourth-page">
       <HomeUpcomingEvents/>
     </div>
-    <div id="email-footer" class="flex justify-center items-center m-auto h-full">
+    <div id="email-footer" class="flex justify-center items-center h-full">
       <HomeEmailSubscribe/>
     </div>
     <div id="contact-us">
       <div class="w-1/3 text-center mx-auto">
         <h3>Contact Us</h3>
-        <span>drop a message to get more info about our activities, we will love to hear from you.</span>
+        <span>Drop a message to get more info about our activities, we will love to hear from you.</span>
       </div>
-      <div class="w-2/3">
-        <form>
-          <div class="w-1/2">
-            <label>Name</label>
-            <input>
+      <div class="w-2/3 mx-auto">
+        <form class="my-8">
+          <div class="flex justify-center mx-auto">
+            <div class="w-1/2 mr-8 input-border ">
+              <label class="form-label" for="name">Name</label>
+              <input id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 py-1 leading-tight focus:outline-none" type="text">
+            </div>
+            <div class="w-1/2 input-border ">
+              <label class="form-label" for="email">Email</label>
+              <input id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 py-1 leading-tight focus:outline-none" type="email">
+            </div>
+          </div>
+          <div class="input-border  mt-8">
+            <label class="form-label" for="message">Message</label>
+            <input id="message" class="appearance-none bg-transparent border-none w-full text-gray-700 py-1 leading-tight focus:outline-none" type="text">
+          </div>
+          <div class="flex justify-center mt-8">
+            <button class="submit-button text-white font-bold py-2 px-4 rounded">Submit</button>
           </div>
         </form>
+      </div>
+    </div>
+    <div id="home-footer" class="flex items-center justify-center" style="background-color: #F18500;height: 80px">
+      <div class="flex">
+        <img class="mr-2" src="../../images/copyright.svg" alt="copyright">
+        <span class="text-white"> 2020. human development charity foundation</span>
       </div>
     </div>
   </div>
@@ -93,10 +112,46 @@ export default {
     margin-top: 150px;
     margin-bottom: 150px;
     background: url("../../images/background-footer-email.png");
-    height: 300px;
+    min-height: 300px;
     background-size: 100% 300px;
   }
   #contact-us {
     background-color: #FFF7ED;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #contact-us h3 {
+    font-family: "Cera Pro",serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    color: #141414;
+  }
+
+  #contact-us span {
+    font-family: "Cera Pro", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #565050;
+  }
+  .input-border {
+    border-bottom: 1px solid #F18500;
+  }
+
+  form input {
+    color: #141414 !important;
+    font-family: "Cera Pro", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .form-label {
+    color: #565050;
+  }
+
+  .submit-button {
+    background-color: #F18500;
   }
 </style>

@@ -6,16 +6,16 @@
     </div>
     <div class="flex" style="padding-left: 13.68%;">
       <div class="my-auto ml-2 mr-20">
-        <p class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
+        <p @click="handleScrollLeft" class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
           <img class="m-auto" alt="left-arrow"  src="../../images/left-arrow.svg">
         </p>
-        <p class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
+        <p @click="handleScrollRight" class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
           <img class="m-auto" alt="right-arrow" src="../../images/right-arrow.svg">
         </p>
       </div>
-      <div class="flex w-full flex-no-wrap overflow-x-hidden">
-        <HomeCountdownCard/>
-        <HomeCountdownCard/>
+      <div ref="scrollerCards" class="flex p-1 w-full flex-no-wrap overflow-x-hidden">
+        <HomeCountdownCard event-image="children-sitting.png"/>
+        <HomeCountdownCard event-image="home-event2.svg"/>
       </div>
     </div>
   </div>
@@ -25,7 +25,20 @@
 import HomeCountdownCard from '@/components/HomeCountdownCard'
 export default {
   name: 'HomeUpcomingEvents',
-  components: { HomeCountdownCard }
+  data () {
+    return {}
+  },
+  components: { HomeCountdownCard },
+  methods: {
+    handleScrollLeft () {
+      // eslint-disable-next-line no-unused-expressions
+      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 50 : 0
+    },
+    handleScrollRight () {
+      // eslint-disable-next-line no-unused-expressions
+      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 50 : 0
+    }
+  }
 }
 </script>
 

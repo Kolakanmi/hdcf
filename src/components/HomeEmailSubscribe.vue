@@ -4,9 +4,9 @@
       <h3>You Too Can Make A Difference</h3>
       <span>Subscribe to our newsletter to stay informed about our news and upcoming events.</span>
     </div>
-    <div class="flex w-1/2 m-auto">
-      <input class="flex-1 outline-none focus:bg-yellow-100 focus:border-4 focus:border-yellow-500"/>
-      <button>Subscribe</button>
+    <div class="w-1/3 md:flex m-auto">
+      <input class="flex-1  w-full outline-none focus:bg-yellow-100 focus:border-4 focus:border-yellow-500"/>
+      <button class="mx-auto md:mx-0 p-2">Subscribe</button>
     </div>
   </div>
 </template>
@@ -40,7 +40,6 @@ export default {
     background-color: #F18500;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
-    padding: 10px 30px;
   }
   input {
     font-size: 26px;
