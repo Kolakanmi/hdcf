@@ -1,11 +1,11 @@
 <template>
-  <div class="shadow-xl py-2 flex-none" style="min-height: 420px; margin-right: 40px">
-    <div class="flex h-full mr-8" style="min-width: 400px !important;">
+  <div class="shadow-xl flex-none" style="min-height: 420px; margin-right: 40px">
+    <div class="flex h-full mr-8 md-below-event-card md-above-event-card ">
       <div class="hidden md:flex w-5/12 h-full">
         <img class="object-cover w-full h-full" alt="children-sitting" :src="require('@/assets/img/' + eventImage)"/>
       </div>
       <div class="flex w-full md:w-7/12">
-        <div class="w-9/12 m-auto">
+        <div class="w-10/12 m-auto">
           <h3>Ikoyi Orphanage</h3>
           <span>Campaign description goes here</span>
           <br/>
@@ -130,5 +130,15 @@ export default {
     line-height: 20px;
     background-color: #F18500;
     border-radius: 3px;
+  }
+  @media only screen and (min-width: 768px) {
+    .md-above-event-card {
+      min-width: 600px !important;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .md-below-event-card {
+      min-width: 400px !important;
+    }
   }
 </style>

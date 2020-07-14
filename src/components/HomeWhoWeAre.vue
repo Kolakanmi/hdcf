@@ -5,7 +5,7 @@
     </div>
     <div id="who-we-are" class="flex items-center md:w-7/12">
       <div class="w-4/5 md:w-2/3 mx-auto my-8 md:my-0">
-        <h3>Who Are We</h3>
+        <h3>Who We Are</h3>
         <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here

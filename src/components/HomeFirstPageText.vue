@@ -22,6 +22,7 @@ h3 {
   font-weight: 900;
   font-size: 40px;
   line-height: 120%;
+  margin: 0px !important;
 }
 span {
   display: inline-block;

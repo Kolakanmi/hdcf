@@ -32,11 +32,22 @@ export default {
   methods: {
     handleScrollLeft () {
       // eslint-disable-next-line no-unused-expressions
-      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 450 : 0
+      if (window.matchMedia('screen and (max-width: 768px)').matches) {
+        // eslint-disable-next-line no-unused-expressions
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 200 : 0
+      } else {
+        // eslint-disable-next-line no-unused-expressions
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 450 : 0
+      }
     },
     handleScrollRight () {
-      // eslint-disable-next-line no-unused-expressions
-      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 450 : 0
+      if (window.matchMedia('screen and (max-width: 768px)').matches) {
+        // eslint-disable-next-line no-unused-expressions
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 200 : 0
+      } else {
+        // eslint-disable-next-line no-unused-expressions
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 450 : 0
+      }
     }
   }
 }

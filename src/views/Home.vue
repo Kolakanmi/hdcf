@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div class="home" v-bind:class="{'no-scroll-overlay': isSidebarOpen}">
     <div id="first-page" class="">
-      <div style="height: 10vh; margin-bottom: 5vh">
-        <NavHeader/>
+      <div style="height: 10vh">
+        <NavHeader :isSidebarOpen="isSidebarOpen" :setSidebarOpen="setSidebarOpen"/>
       </div>
-      <div class="flex" style="height: 80vh;">
-        <div class="flex md:w-1/2 my-auto items-center justify-center">
+      <div class="flex" style="height: 90vh;padding-top: 2.5vh; padding-bottom: 2.5vh">
+        <div class="flex md:w-1/2 items-center justify-center">
           <HomeFirstPageText/>
         </div>
         <div id="page-image" class="hidden md:flex w-1/2 mr-auto">
@@ -75,6 +75,10 @@ import HomeUpcomingEvents from '@/components/HomeUpcomingEvents'
 import HomeEmailSubscribe from '@/components/HomeEmailSubscribe'
 export default {
   name: 'Home',
+  props: {
+    isSidebarOpen: [String, Boolean],
+    setSidebarOpen: [String, Function]
+  },
   components: {
     HomeEmailSubscribe,
     HomeUpcomingEvents,
@@ -83,6 +87,9 @@ export default {
     HomeFirstPageText,
     NavHeader,
     HomeDoubleImage
+  },
+  mounted () {
+    console.log('home props: ', this.isSidebarOpen)
   }
 }
 </script>

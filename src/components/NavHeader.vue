@@ -12,14 +12,22 @@
         Donate
       </div>
     </div>
-    <span class="ml-auto my-auto md:hidden"><i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #F18500"></i></span>
+    <span class="ml-auto my-auto md:hidden" @click="openSidebar"><i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #F18500"></i></span>
 
   </div>
 </template>
 
 <script>
 export default {
-  name: 'NavHeader'
+  name: 'NavHeader',
+  props: {
+    setSidebarOpen: [String, Function]
+  },
+  methods: {
+    openSidebar () {
+      this.setSidebarOpen(true)
+    }
+  }
 }
 </script>
 
