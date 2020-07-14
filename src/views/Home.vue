@@ -87,9 +87,6 @@ export default {
     HomeFirstPageText,
     NavHeader,
     HomeDoubleImage
-  },
-  mounted () {
-    console.log('home props: ', this.isSidebarOpen)
   }
 }
 </script>
