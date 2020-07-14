@@ -3,7 +3,7 @@
     <div style="height: 68px; width: 125.09px;" class="my-auto">
       <img alt="logo" src="../../images/logo.png" />
     </div>
-    <div id="nav" class="box-content hidden sm:flex my-auto ml-auto justify-end lg:w-3/4">
+    <div id="nav" class="box-content hidden md:flex my-auto ml-auto justify-end lg:w-3/4">
       <router-link class="link-style my-auto" to="/">Home</router-link>
       <router-link class="link-style my-auto" to="/about">About Us</router-link>
       <router-link class="link-style my-auto" to="/campaigns">Campaigns</router-link>
@@ -12,6 +12,7 @@
         Donate
       </div>
     </div>
+    <span class="ml-auto my-auto md:hidden"><i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #F18500"></i></span>
 
   </div>
 </template>

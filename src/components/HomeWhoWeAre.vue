@@ -4,7 +4,7 @@
       <img STYLE="min-height: 450px !important;" class="object-cover w-full h-full" alt="children" src="../../images/home-section3.png" />
     </div>
     <div id="who-we-are" class="flex items-center md:w-7/12">
-      <div class="w-2/3 mx-auto">
+      <div class="w-4/5 md:w-2/3 mx-auto my-8 md:my-0">
         <h3>Who Are We</h3>
         <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.

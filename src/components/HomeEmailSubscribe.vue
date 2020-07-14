@@ -1,12 +1,12 @@
 <template>
   <div class="w-full" style="">
-    <div class="w-1/3 m-auto text-center" style="margin-bottom: 56px">
+    <div class="w-full md:w-1/3 m-auto text-center" style="margin-bottom: 56px">
       <h3>You Too Can Make A Difference</h3>
       <span>Subscribe to our newsletter to stay informed about our news and upcoming events.</span>
     </div>
-    <div class="w-1/3 md:flex m-auto">
+    <div class="w-full px-1 md:w-1/3 flex m-auto">
       <input class="flex-1  w-full outline-none focus:bg-yellow-100 focus:border-4 focus:border-yellow-500"/>
-      <button class="mx-auto md:mx-0 p-2">Subscribe</button>
+      <button class="self-center mx-auto md:mx-0 p-2">Subscribe</button>
     </div>
   </div>
 </template>

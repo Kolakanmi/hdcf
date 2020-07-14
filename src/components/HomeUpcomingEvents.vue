@@ -32,11 +32,11 @@ export default {
   methods: {
     handleScrollLeft () {
       // eslint-disable-next-line no-unused-expressions
-      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 50 : 0
+      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 450 : 0
     },
     handleScrollRight () {
       // eslint-disable-next-line no-unused-expressions
-      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 50 : 0
+      this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 450 : 0
     }
   }
 }

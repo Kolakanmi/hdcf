@@ -27,19 +27,19 @@
     <div id="email-footer" class="flex justify-center items-center h-full">
       <HomeEmailSubscribe/>
     </div>
-    <div id="contact-us">
-      <div class="w-1/3 text-center mx-auto">
+    <div class="px-1" id="contact-us">
+      <div class="w-full md:w-1/3 text-center mx-auto">
         <h3>Contact Us</h3>
         <span>Drop a message to get more info about our activities, we will love to hear from you.</span>
       </div>
-      <div class="w-2/3 mx-auto">
+      <div class="w-full md:w-2/3 mx-auto">
         <form class="my-8">
-          <div class="flex justify-center mx-auto">
-            <div class="w-1/2 mr-8 input-border ">
+          <div class="block md:flex justify-center mx-auto">
+            <div class="w-full md:w-1/2 md:mr-8 input-border">
               <label class="form-label" for="name">Name</label>
               <input id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 py-1 leading-tight focus:outline-none" type="text">
             </div>
-            <div class="w-1/2 input-border ">
+            <div class="w-full md:w-1/2 mt-8 md:mt-0 input-border ">
               <label class="form-label" for="email">Email</label>
               <input id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 py-1 leading-tight focus:outline-none" type="email">
             </div>
