@@ -11,7 +11,7 @@ export default {
   components: { NavSidebar },
   data () {
     return {
-      isSidebarOpen: false
+      isSidebarOpen: true
     }
   },
   methods: {
