@@ -29,14 +29,14 @@ export default {
 </script>
 
 <style scoped>
-  #nav-sidebar {
+  /*#nav-sidebar {
     height: 100vh;
     position: fixed;
     z-index: 1000;
     width: 300px;
     right: -300px;
     background-color: white;
-  }
+  }*/
   .link-style {
     font-family: "Cera Pro",serif;
     font-style: normal;
@@ -44,7 +44,8 @@ export default {
     font-weight: 500;
     display: block;
     text-align: center;
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #donate-btn {
     border: 2px solid #F18500;
@@ -70,7 +71,7 @@ export default {
       right: -300px !important;
       background-color: white;
       transition: right 1s;
-      border: 1px solid #F18500;
+      //border: 1px solid #F18500;
     }
     .show-slide {
       right: 0 !important;
