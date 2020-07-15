@@ -4,8 +4,8 @@
       <h3>You Too Can Make A Difference</h3>
       <span>Subscribe to our newsletter to stay informed about our news and upcoming events.</span>
     </div>
-    <div class="w-full px-1 md:w-1/3 flex m-auto">
-      <input class="flex-1  w-full outline-none focus:bg-yellow-100 focus:border-4 focus:border-yellow-500"/>
+    <div class="w-full px-2 md:w-1/3 flex m-auto">
+      <input class="flex-1 w-full outline-none focus:bg-yellow-100 focus:border-4 focus:border-yellow-500"/>
       <button class="self-center mx-auto md:mx-0 p-2">Subscribe</button>
     </div>
   </div>

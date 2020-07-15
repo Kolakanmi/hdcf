@@ -27,7 +27,7 @@
     <div id="email-footer" class="flex justify-center items-center h-full">
       <HomeEmailSubscribe/>
     </div>
-    <div class="px-1" id="contact-us">
+    <div class="px-2" id="contact-us">
       <div class="w-full md:w-1/3 text-center mx-auto">
         <h3>Contact Us</h3>
         <span>Drop a message to get more info about our activities, we will love to hear from you.</span>

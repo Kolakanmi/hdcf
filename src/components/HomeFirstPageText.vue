@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="m-0 p-0">
     <h3><strong>A world where every one is</strong></h3>
     <h3><strong>given a chance to live</strong></h3>
     <span>We aim to bridge the gap and lorem towards the sustainable development goals</span>
@@ -22,7 +22,7 @@ h3 {
   font-weight: 900;
   font-size: 40px;
   line-height: 120%;
-  margin: 0px !important;
+  margin: 0 !important;
 }
 span {
   display: inline-block;

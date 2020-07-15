@@ -17,7 +17,7 @@
       </div>
       <div class="md:flex-auto">
         <span class="mission-image"><img alt="earth" src="../../images/earth.svg"/></span>
-        <h4 class="mission-h4"><strong>Healthy Food</strong></h4>
+        <h4 class="mission-h4"><strong>Global sustenance</strong></h4>
         <span>We aim to bridge the gap and lorem towards the sustainable development goals.</span>
       </div>
     </div>
