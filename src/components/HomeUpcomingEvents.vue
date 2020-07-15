@@ -5,17 +5,17 @@
       <span>We aim to bridge the gap and lorem towards the sustainable development goals.</span>
     </div>
     <div class="flex" style="padding-left: 13.68%;">
-      <div class="my-auto ml-2 mr-20">
-        <p @click="handleScrollLeft" class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
+      <div class="my-auto ml-0 md:ml-2 mr-8 md:mr-20">
+        <p @click="handleScrollLeft" class="flex mb-8 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
           <img class="m-auto" alt="left-arrow"  src="../../images/left-arrow.svg">
         </p>
-        <p @click="handleScrollRight" class="flex mb-2 mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
+        <p @click="handleScrollRight" class="flex mx-auto cursor-pointer" style="background-color: #F18500; border-radius: 50%; width: 30px; height: 30px">
           <img class="m-auto" alt="right-arrow" src="../../images/right-arrow.svg">
         </p>
       </div>
       <div ref="scrollerCards" class="flex p-1 w-full flex-no-wrap overflow-x-hidden">
-        <HomeCountdownCard event-image="children-sitting.png"/>
-        <HomeCountdownCard event-image="home-event2.svg"/>
+        <HomeCountdownCard event-image="children-sitting.png" location="Ikoyi Orphanage" date="July 18, 2020"/>
+        <HomeCountdownCard event-image="home-event2.svg" location="Lekki Orphanage" date="August 20, 2020"/>
       </div>
     </div>
   </div>
@@ -31,19 +31,24 @@ export default {
   components: { HomeCountdownCard },
   methods: {
     handleScrollLeft () {
-      // eslint-disable-next-line no-unused-expressions
-      if (window.matchMedia('screen and (max-width: 768px)').matches) {
+      if (window.matchMedia('screen and (max-width: 640px)').matches) {
         // eslint-disable-next-line no-unused-expressions
-        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 200 : 0
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 150 : 0
+      } else if (window.matchMedia('screen and (max-width: 768px)').matches) {
+        // eslint-disable-next-line no-unused-expressions
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 250 : 0
       } else {
         // eslint-disable-next-line no-unused-expressions
         this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft -= 450 : 0
       }
     },
     handleScrollRight () {
-      if (window.matchMedia('screen and (max-width: 768px)').matches) {
+      if (window.matchMedia('screen and (max-width: 640px)').matches) {
         // eslint-disable-next-line no-unused-expressions
-        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 200 : 0
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 150 : 0
+      } else if (window.matchMedia('screen and (max-width: 768px)').matches) {
+        // eslint-disable-next-line no-unused-expressions
+        this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 250 : 0
       } else {
         // eslint-disable-next-line no-unused-expressions
         this.$refs.scrollerCards ? this.$refs.scrollerCards.scrollLeft += 450 : 0

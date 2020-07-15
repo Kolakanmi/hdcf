@@ -6,13 +6,13 @@
       </div>
       <div class="flex w-full md:w-7/12">
         <div class="w-10/12 m-auto">
-          <h3>Ikoyi Orphanage</h3>
+          <h3>{{location}}</h3>
           <span>Campaign description goes here</span>
           <br/>
           <hr style="margin-top: 30px; margin-bottom: 30px" >
           <div class="flex items-center" style="margin-bottom: 22px">
             <p class="my-auto" style="width: 6px; height: 6px; margin-right: 10px"><img alt="ellipse" src="../../images/ellipse.svg"></p>
-            <p class="my-auto date">July 20, 2020</p>
+            <p class="my-auto date">{{date}}</p>
           </div>
           <div class="flex">
             <div class="time-wrapper">
@@ -45,7 +45,7 @@
 <script>
 export default {
   name: 'HomeCountdownCard',
-  props: ['eventImage']
+  props: ['eventImage', 'location', 'date']
 }
 </script>
 
